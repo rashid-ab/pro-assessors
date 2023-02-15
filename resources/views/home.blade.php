@@ -90,12 +90,28 @@
 
 
 
-        <div class="about" style="height: 400px;">
-            <div class="about-childs" style="flex: 1.5;background-color: #F1EFF2;">
-                    {{-- <img src="assets/values.png" style="width: 500px;height: 380px;margin-top:10px" alt=""> --}}
+        <div class="about" style="height: 500px;">
+            <div class="about-childs" style="flex: 1;background-color: #F1EFF2;padding: 75px;">
+                    <p style="line-height: 1em;">About<br>
+                        Pro-Assessors</p>
+                        <div style="width: 80%;margin: 20px 0px;">
+                            <p style="font-size: .7rem;color: #76777B">Pro Assessors is proud to be the first seamless, web-based platform of its kind that simplifies and streamlines the process of reporting by connecting clients with legal services and medical specialties of their choice to obtain professional opinions, literally at a glance.
+                                <br><br>
+                                This service is the first of its kind enabling users to interact with providers to request medical assessments and obtain med-legal reports in an efficient and effective manner by employing faster and simpler working methods.
+                                Book the required assessment and obtain a......READ MORE
+                            </p>
+                        </div>
             </div>
-            <div class="about-childs" style="flex: 1;display: flex;justify-content: center">
-           
+            <div class="about-childs about-second-child" style="flex: 1;display: flex;">
+                <div style="padding: 0px 32px;flex:1;">
+                    <p style="font-size: 1rem">
+                        This service is the first of its kind enabling users to interact with providers to request medical assessments and obtain med-legal reports
+                    </p>
+                </div>
+                <div style="flex:2;">
+                    <img src="assets/about.png" alt="">
+                </div>
+                {{--  --}}
             </div>
         </div>
 @endsection
