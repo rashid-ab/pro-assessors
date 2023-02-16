@@ -105,6 +105,84 @@
 	width: 100%;
 	border-radius: 20px;
 }
+
+.contact{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.contact-childs{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.contact-childs p{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  line-height: 3em;
+}
+.contact-second-child{
+display: flex;
+flex-direction: column
+}
+.contact-second-child div{
+/* display: flex; */
+
+justify-content: center;
+align-items: center;
+}
+.contact-second-child div img{
+width: 100%;
+border-radius: 20px;
+}
+.form-group input{
+  border-radius: 50px;
+  background-color: #F1EFF2;
+  
+}
+::placeholder{
+  color: #416CAB;
+}
+.form-group{
+  margin:15px 0px;
+}
+.footer_header{
+  height: 300px;
+  background-color: #20215E;
+  display: flex;
+  flex-direction: row;
+}
+.footer_header div p{
+  font-size: .7rem;
+  padding: 20px;
+  color: white;
+}
+.header_items li{
+  margin: 6px 0px;
+  border-left: 3px solid #AE914C;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px 0px 100px;
+  background-color: #515C84;
+
+}
+.footer p{
+  color: white;
+  font-size: .7rem;
+}
+.fa-brands{
+  color: white !important;
+}
+.fa-brands:not(:first-child){
+  margin:0px 2px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 .thumb-wrapper {
 	padding: 10px 15px;

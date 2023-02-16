@@ -12,10 +12,9 @@
     <!-- Fonts -->
     
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="{{asset('css/home.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css" integrity="sha512-CTWIgc35lLPcCl1OP7MNcrrES+jyBBvMEz8Cqx/v0hifPNjIpPsd/jUYTJ/41CYCrQdfuw7LopKaqqjXVLqejg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
@@ -110,15 +109,47 @@
             </nav>
         </div>
         <main class="py-4" style="padding-top: 0px !important;
-        padding-bottom: 0px !important;">
+            padding-bottom: 0px !important;">
             @yield('content')
         </main>
+        <div class="footer_header">
+            <div style="background-color: #20215E;flex: 1;display: flex;justify-content: center;align-items: center;flex-direction: column">
+                <img src="assets/logos.png" width="35%" alt="">
+                <p>Pro-assessors-web-based platform <br>for your med-legal process</p>
+            </div>
+            <div style="background-color: #20215E;flex: 1;display: flex;justify-content: center;padding-top: 80px; ">
+                <ul class="header_items" style="list-style: none">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="background-color: #20215E;flex: 1;display: flex;flex-direction: column;align-items: center;padding-top: 80px;">
+                <p style="color: white;padding: 0px;font-size: .9rem;margin:0px">Follow us</p>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2023 Pro-Assessors by Itek Global</p>
+            <p>Privacy Policy    |    Terms & Conditions</p>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js" integrity="sha512-cEcJcdNCHLm3YSMAwsI/NeHFqfgNQvO0C27zkPuYZbYjhKlS9+kqO5hZ9YltQ4GaTDpePDQ2SrEk8gHUVaqxig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='https://use.fontawesome.com/826a7e3dce.js'></script>
+    {{-- <script src='https://use.fontawesome.com/826a7e3dce.js'></script> --}}
     <script>
         $(document).ready(function()
 {

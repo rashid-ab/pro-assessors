@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+        {{-- Banner Section --}}
         <div class="banner" style="height: 500px;">
                 <div class="banner-childs">
                         <p>Streamline Your Reporting<br>Process with Pro Assessors</p>
@@ -9,6 +10,8 @@
                         <img src="assets/hand.png" style="width: 60%;" alt="">
                 </div>
         </div>
+
+        {{-- Value Section --}}
         <div class="values" style="height: 400px;">
                 <div class="values-childs" style="flex: 4">
                         <img src="assets/values.png" style="width: 95%;height:95%;margin-top:10px" alt="">
@@ -85,10 +88,7 @@
                         </div>
                 </div>
             </div>
-
-
-
-
+        {{-- About Section --}}
 
         <div class="about" style="height: 500px;">
             <div class="about-childs" style="flex: 1;background-color: #F1EFF2;padding: 75px;">
@@ -104,7 +104,7 @@
             </div>
             <div class="about-childs about-second-child" style="flex: 1;display: flex;">
                 <div style="padding: 0px 32px;flex:1;">
-                    <p style="font-size: 1rem">
+                    <p style="font-size: 1rem;margin-top: 80px;">
                         This service is the first of its kind enabling users to interact with providers to request medical assessments and obtain med-legal reports
                     </p>
                 </div>
@@ -112,6 +112,67 @@
                     <img src="assets/about.png" alt="">
                 </div>
                 {{--  --}}
+            </div>
+        </div>
+        
+        {{-- Contact Section --}}
+
+        <div class="contact" style="height: 500px;background-color: #20215E">
+            <div class="contact-childs" style="flex: 1;">
+                    <p>Looking for an expert?<br>Make a Request for an Assessment
+                    </p>
+                        
+            </div>
+            <div class="contact-childs contact-second-child" style="flex: 1.5;display: flex;">
+                <div style="background-color: #FFFFFF;height: 400px;width: 80%;border-radius:10px;">
+                    <div class="row">
+                        <div class="col-xs-12 ">
+                            <form role="form" style="padding: 30px">
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="first_name">First Name</label>
+                                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="write your first name here" tabindex="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="last_name">Last Name</label>
+                                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="write your last name here" tabindex="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="write your email here" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="subject">Subject</label>
+                                            <input type="text" name="subject" id="subject" class="form-control input-lg" placeholder="write your subject here" tabindex="6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12" style="width:100%">
+                                        <div class="form-group" style="width:100%">
+                                            <label for="address">Address Issue</label>
+                                            <input type="text" name="address" id="address" class="form-control input-lg" placeholder="what can we help ypu with?" tabindex="6">
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6"><input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg" style="background-color: #20215E !important;border-radius: 50px;border: none !important" tabindex="7"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 @endsection
