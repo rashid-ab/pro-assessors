@@ -62,10 +62,10 @@
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Home</a>
+                                        <a  class="nav-link" href="{{url('/')}}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About us</a>
+                                        <a class="nav-link" href="{{url('/about')}}">About us</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Contact us</a>
@@ -120,10 +120,10 @@
             <div style="background-color: #20215E;flex: 1;display: flex;justify-content: center;padding-top: 80px; ">
                 <ul class="header_items" style="list-style: none">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="{{url('/')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="{{url('/about')}}">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact us</a>
