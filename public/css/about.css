@@ -1,0 +1,73 @@
+.header{
+    background-image: url('../assets/about_banner.png');
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.header p{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+.solutions{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+.about_desc{
+    height: 250px;
+    background-color: #20215E;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 200px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 26px;
+}
+.item div p{
+    color: white;
+    font-size: .7rem;
+    text-align: center;
+}
+.experts{
+    height: 600px;
+    background-color: #20215E;
+    display: flex;
+}
+.legal,.medical{
+    flex:1.5;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.why{
+    flex:1;
+    flex-direction: column;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+}
+.why p{
+    color: white;
+    font-size: 1.3rem;
+}
+.why img{width: 200px;}
+.left-icon,.right-icon{
+    flex:1;
+    padding: 10px 0px;
+}
+.left-icon img,.right-icon img{
+    width: 50px;
+    height: 30px;
+}
