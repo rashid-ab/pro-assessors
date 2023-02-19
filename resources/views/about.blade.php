@@ -5,12 +5,12 @@
     </div>
     <div class="solutions">
         <p style="font-size: 1.3rem;font-weight: bold;color: #20215E;">Discovering Quality Medical Legal Solutions</p>
-        <p style="font-size: 0.6rem;color: #20215E;">PRO-ASSESSORS- WEB-BASED PLATFORM FOR YOUR MED-LEGAL PROCESS</p>
+        <p style="font-size: 0.6rem;color: #20215E;font-weight: bold;">PRO-ASSESSORS- WEB-BASED PLATFORM FOR YOUR MED-LEGAL PROCESS</p>
     </div>
     <div class="about_desc">
         <div class="item">
             <div style="flex: 1;justify-content: flex-end;display: flex;align-items: center;">
-                <img src="assets/hammer.png" style="opacity: 0.3;width: 30px;" alt="">
+                <img src="assets/hammer.png" style="opacity: 0.9;width: 30px;" alt="">
             </div>
             <div style="flex:2.5">
                 <p>
@@ -20,7 +20,7 @@
         </div>
         <div class="item">
             <div style="flex: 1;justify-content: flex-end;display: flex;align-items: center;">
-                <img src="assets/hammer.png" style="opacity: 0.3;width: 30px;" alt="">
+                <img src="assets/hammer.png" style="opacity: 0.9;width: 30px;" alt="">
             </div>
             <div style="flex:2.5">
                 <p>
@@ -30,7 +30,7 @@
         </div>
         <div class="item">
             <div style="flex: 1;justify-content: flex-end;display: flex;align-items: center;">
-                <img src="assets/hammer.png" style="opacity: 0.3;width: 30px;" alt="">
+                <img src="assets/hammer.png" style="opacity: 0.9;width: 30px;" alt="">
             </div>
             <div style="flex:2.5">
                 <p>
@@ -40,7 +40,7 @@
         </div>
         <div class="item">
             <div style="flex: 1;justify-content: flex-end;display: flex;align-items: center;">
-                <img src="assets/hammer.png" style="opacity: 0.3;width: 30px;" alt="">
+                <img src="assets/hammer.png" style="opacity: 0.9;width: 30px;" alt="">
             </div>
             <div style="flex:2.5">
                 <p>
@@ -133,4 +133,5 @@
             </div>
         </div>
     </div>
-@endsection
+    
+@endsection 

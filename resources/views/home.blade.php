@@ -1,7 +1,24 @@
 @extends('layouts.app')
 @section('content')
         {{-- Banner Section --}}
-        <div class="banner" style="height: 500px;">
+        {{-- <div class="banner" style="height: 500px;">
+                <div class="banner-childs">
+                        <p>Streamline Your Reporting<br>Process with Pro Assessors</p>
+                </div>
+                <div class="banner-childs">
+                        <img src="assets/smallicons.png" style="width: 35%;" alt="">
+                        <img src="assets/hand.png" style="width: 60%;" alt="">
+                </div>
+        </div> --}}
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="banner" style="height: 500px;">
                 <div class="banner-childs">
                         <p>Streamline Your Reporting<br>Process with Pro Assessors</p>
                 </div>
@@ -10,7 +27,31 @@
                         <img src="assets/hand.png" style="width: 60%;" alt="">
                 </div>
         </div>
-
+              </div>
+              <div class="carousel-item">
+                <div class="banner" style="height: 500px;">
+                <div class="banner-childs">
+                        <p>Streamline Your Reporting<br>Process with Pro Assessors</p>
+                </div>
+                <div class="banner-childs">
+                        <img src="assets/smallicons.png" style="width: 35%;" alt="">
+                        <img src="assets/hand.png" style="width: 60%;" alt="">
+                </div>
+        </div>
+              </div>
+              <div class="carousel-item">
+                <div class="banner" style="height: 500px;">
+                <div class="banner-childs">
+                        <p>Streamline Your Reporting<br>Process with Pro Assessors</p>
+                </div>
+                <div class="banner-childs">
+                        <img src="assets/smallicons.png" style="width: 35%;" alt="">
+                        <img src="assets/hand.png" style="width: 60%;" alt="">
+                </div>
+        </div>
+              </div>
+            </div>
+          </div>
         {{-- Value Section --}}
         <div class="values" style="height: 400px;">
                 <div class="values-childs" style="flex: 4">
@@ -91,7 +132,7 @@
         {{-- About Section --}}
 
         <div class="about" style="height: 500px;">
-            <div class="about-childs" style="flex: 1;background-color: #F1EFF2;padding: 75px;">
+            <div class="about-childs" style="flex: 1.3;background-color: #F1EFF2;padding: 75px;">
                     <p style="line-height: 1em;">About<br>
                         Pro-Assessors</p>
                         <div style="width: 80%;margin: 20px 0px;">

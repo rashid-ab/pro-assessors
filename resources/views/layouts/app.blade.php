@@ -20,10 +20,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css" integrity="sha512-CTWIgc35lLPcCl1OP7MNcrrES+jyBBvMEz8Cqx/v0hifPNjIpPsd/jUYTJ/41CYCrQdfuw7LopKaqqjXVLqejg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js" integrity="sha512-cEcJcdNCHLm3YSMAwsI/NeHFqfgNQvO0C27zkPuYZbYjhKlS9+kqO5hZ9YltQ4GaTDpePDQ2SrEk8gHUVaqxig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div id="app">
-        <div style="background-color:transparent !important;position: absolute;width: 100%;">
+    <div id="app" style="background-color: #041435">
+        <div style="background-color:transparent !important;position: absolute;width: 100%;z-index: 1;">
             {{-- <div > --}}
                 <!-- Left Side Of Navbar -->
                 
@@ -62,14 +66,14 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a  class="nav-link" href="{{url('/')}}">Home</a>
+                                    <li class="nav-item ">
+                                        <a  class="nav-link home active" href="{{url('/')}}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{url('/about')}}">About us</a>
+                                        <a class="nav-link abouts" href="{{url('/about')}}">About us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact us</a>
+                                        <a class="nav-link contactus" href="#">Contact us</a>
                                     </li>
                             <!-- Authentication Links -->
 
@@ -82,7 +86,7 @@
 
                                 @if (Route::has('register'))
                                     <li class="nav-item" style="height: 21px !important;background-color: white !important;border-radius: 50px">
-                                        <a class="nav-link" style="color: #20215E !important;padding-top: 2px !important;font-size: .7rem !important" href="{{ route('register') }}">SIgnup | Login</a>
+                                        <a class="nav-link signup" style="color: #20215E !important;padding-top: 2px !important;font-size: .7rem !important;font-weight: 400 !important;" href="{{ route('register') }}">SIGN UP | LOGIN</a>
                                     </li>
                                 @endif
                             @else
@@ -121,13 +125,13 @@
             <div style="background-color: #20215E;flex: 1;display: flex;justify-content: center;padding-top: 80px; ">
                 <ul class="header_items" style="list-style: none">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}">Home</a>
+                        <a class="nav-link home" href="{{url('/')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/about')}}">About us</a>
+                        <a class="nav-link about" href="{{url('/about')}}">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link contact" href="#">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -146,14 +150,28 @@
             <p>Privacy Policy    |    Terms & Conditions</p>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js" integrity="sha512-cEcJcdNCHLm3YSMAwsI/NeHFqfgNQvO0C27zkPuYZbYjhKlS9+kqO5hZ9YltQ4GaTDpePDQ2SrEk8gHUVaqxig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     {{-- <script src='https://use.fontawesome.com/826a7e3dce.js'></script> --}}
     <script>
         $(document).ready(function()
 {
+    var currentTab = window.location.href
+        var currentTab = currentTab.substring(currentTab.indexOf('public/')+7)
+        if(currentTab=='home'){
+            $( ".nav-link" ).removeClass( "active" );
+            $( ".home" ).addClass( "active" );
+        }
+        if(currentTab=='about'){
+            $( ".nav-link" ).removeClass( "active" );
+            $( ".abouts" ).addClass( "active" );
+            $(".signup").html('');
+            $(".signup").append('<img src="assets/signup.png" width="60px" />');
+
+        }
+        if(currentTab=='contactus'){
+            $( ".nav-link" ).removeClass( "active" );
+            $( ".contactus" ).addClass( "active" );
+        }
     var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,

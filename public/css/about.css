@@ -3,6 +3,7 @@
     height: 300px;
     display: flex;
     align-items: center;
+    background-size: cover;
 }
 .header p{
     color: white;
@@ -18,6 +19,7 @@
     flex-direction: column;
     padding-top: 30px;
     padding-left: 80px;
+    background: white;
 }
 .about_desc{
     height: 250px;
